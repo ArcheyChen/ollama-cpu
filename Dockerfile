@@ -13,7 +13,7 @@ COPY --from=ollama /usr/bin/ollama /usr/bin/ollama
 # COPY --from=ollama /usr/lib/ollama/runners/cpu_avx /usr/lib/ollama/runners/cpu_avx
 # COPY --from=ollama /usr/lib/ollama/runners/cpu_avx2 /usr/lib/ollama/runners/cpu_avx2
 
-COPY ./${TARGETARCH}/ /usr/lib/ollama/runners/
+# COPY ./${TARGETARCH}/ /usr/lib/ollama/runners/
 
 # Environment variable setup
 ENV OLLAMA_HOST=0.0.0.0
